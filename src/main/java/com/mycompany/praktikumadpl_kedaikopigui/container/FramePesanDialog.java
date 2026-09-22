@@ -33,6 +33,7 @@ public class FramePesanDialog extends javax.swing.JFrame {
         btnOK = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         btnPesan = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         DialogKonfirmasi.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         DialogKonfirmasi.setTitle("konfirmasi");
@@ -77,28 +78,35 @@ public class FramePesanDialog extends javax.swing.JFrame {
         btnPesan.setText("Pesan");
         btnPesan.addActionListener(this::btnPesanActionPerformed);
 
+        jLabel2.setText("TEL-U COFFEE");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(67, 67, 67)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(88, 88, 88)
-                        .addComponent(btnPesan)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(67, 67, 67)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(159, 159, 159)
+                        .addComponent(btnPesan))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(160, 160, 160)
+                        .addComponent(jLabel2)))
                 .addContainerGap(69, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(53, 53, 53)
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addGap(31, 31, 31)
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addGap(59, 59, 59)
                 .addComponent(btnPesan)
-                .addContainerGap(190, Short.MAX_VALUE))
+                .addContainerGap(149, Short.MAX_VALUE))
         );
 
         pack();
@@ -147,6 +155,7 @@ public class FramePesanDialog extends javax.swing.JFrame {
     private javax.swing.JButton btnOK;
     private javax.swing.JButton btnPesan;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblPesan;
     // End of variables declaration//GEN-END:variables
 }
