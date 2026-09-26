@@ -138,13 +138,13 @@ public class CardLayoutPesan extends javax.swing.JFrame {
         // TODO add your handling code here:
         lblPesanan.setText("Kopi Yang Dipilih: " + tfKopi.getText());
         java.awt.CardLayout cl = (java.awt.CardLayout) getContentPane().getLayout();
-        cl.show(getContentPane(), "pKofirmasi");
+        cl.show(getContentPane(), "Konfirmasi");
     }//GEN-LAST:event_btnLanjutActionPerformed
 
     private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
         // TODO add your handling code here:
         java.awt.CardLayout cl = (java.awt.CardLayout) getContentPane().getLayout();
-        cl.show(getContentPane(), "pPilih");
+        cl.show(getContentPane(), "Pilih");
     }//GEN-LAST:event_btnKembaliActionPerformed
 
     private void btnSelesaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSelesaiActionPerformed
