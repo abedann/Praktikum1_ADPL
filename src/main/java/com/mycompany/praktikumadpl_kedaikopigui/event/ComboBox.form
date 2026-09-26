@@ -49,12 +49,12 @@
                   <Component id="lblPilihKopi" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cbKopi" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="219" max="32767" attributes="0"/>
+              <EmptySpace pref="228" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblHarga" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblNominal" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -90,6 +90,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblNominal">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Rp. 10.000"/>
       </Properties>
     </Component>

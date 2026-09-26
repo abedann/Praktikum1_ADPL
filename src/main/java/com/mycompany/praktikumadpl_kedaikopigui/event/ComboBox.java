@@ -46,6 +46,7 @@ public class ComboBox extends javax.swing.JFrame {
 
         lblHarga.setText("Harga:");
 
+        lblNominal.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblNominal.setText("Rp. 10.000");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -72,11 +73,11 @@ public class ComboBox extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPilihKopi)
                     .addComponent(cbKopi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 219, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 228, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblHarga)
                     .addComponent(lblNominal))
-                .addGap(24, 24, 24))
+                .addGap(15, 15, 15))
         );
 
         pack();
