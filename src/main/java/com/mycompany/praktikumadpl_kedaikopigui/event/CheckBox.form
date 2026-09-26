@@ -82,6 +82,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Gula Aren (+3.000)"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chbArenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JCheckBox" name="chbSusu">
       <Properties>
@@ -95,6 +98,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Extra Shot (+ 4.000)"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chbExtraActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
@@ -103,7 +109,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblNominal">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Rp."/>
+        <Property name="text" type="java.lang.String" value="Rp. 25.000"/>
       </Properties>
     </Component>
   </SubComponents>

@@ -25,7 +25,11 @@ public class CheckBox extends javax.swing.JFrame {
     
     private void hitungTotal(){
         int total = 25000;
+        if(chbAren.isSelected()) total += 3000;
+        if(chbSusu.isSelected()) total += 5000;
+        if(chbExtra.isSelected()) total += 4000;
         
+        lblNominal.setText(formatRupiah(total));
     }
 
     /**
@@ -53,15 +57,17 @@ public class CheckBox extends javax.swing.JFrame {
         jLabel1.setText("Latte - Rp. 25.000");
 
         chbAren.setText("Gula Aren (+3.000)");
+        chbAren.addActionListener(this::chbArenActionPerformed);
 
         chbSusu.setText("Susu (+5.000)");
         chbSusu.addActionListener(this::chbSusuActionPerformed);
 
         chbExtra.setText("Extra Shot (+ 4.000)");
+        chbExtra.addActionListener(this::chbExtraActionPerformed);
 
         jLabel2.setText("Total");
 
-        lblNominal.setText("Rp.");
+        lblNominal.setText("Rp. 25.000");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,7 +112,18 @@ public class CheckBox extends javax.swing.JFrame {
 
     private void chbSusuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chbSusuActionPerformed
         // TODO add your handling code here:
+        hitungTotal();
     }//GEN-LAST:event_chbSusuActionPerformed
+
+    private void chbArenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chbArenActionPerformed
+        // TODO add your handling code here:
+        hitungTotal();
+    }//GEN-LAST:event_chbArenActionPerformed
+
+    private void chbExtraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chbExtraActionPerformed
+        // TODO add your handling code here:
+        hitungTotal();
+    }//GEN-LAST:event_chbExtraActionPerformed
 
     /**
      * @param args the command line arguments
